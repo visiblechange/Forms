@@ -1,8 +1,8 @@
 <form>
     <p>
-        <label>Postcode: <small>1234 AB</small>
-            <input name="postcode" type="text" pattern="[0-9]{4}[a-zA-Z]{2}" 
-            title="Een Nederlandse postcode bestaat uit 4 cijfers en 2 letters.">
+        <label>IBAN:<small>NL00 AAAA 1234 5678 90</small>
+            <input name="iban2" type="text" pattern="[a-zA-Z]{2}[0-9]{2}\s?[a-zA-Z]{4}\s?[0-9]{4}\s?[0-9]{4}\s?[0-9]{2}" required
+                   title="Een IBAN bestaat uit 2 letters, 2 cijfers, 4 letters en 10 cijfers.">
         </label>
     </p>
     <button type="submit">Verzend</button>
