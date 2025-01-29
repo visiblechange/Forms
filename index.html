@@ -1,9 +1,20 @@
 <form>
     <p>
-        <label>Kies een dag en tijdstip:
-            <input name="date" type="date">
-            <input name="time" type="time">
-        </label>
+        <fieldset>
+            <legend>Vergroot het comfort van uw e-bike met:</legend>
+            <label>
+                <span>airconditioning</span>
+                <input type="checkbox" name="comfort" value="air">
+            </label>
+            <label>
+                <span>cruisecontrol</span>
+                <input type="checkbox" name="comfort" value="cruisecontrol">
+            </label>
+            <label>
+                <span>zadelverwarming</span>
+                <input type="checkbox" name="comfort" value="zadelverwarming">
+            </label>
+        </fieldset>
     </p>
     <button type="submit">Verzend</button>
 </form>
