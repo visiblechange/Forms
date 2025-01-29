@@ -1,20 +1,16 @@
 <form>
     <p>
-        <fieldset>
-            <legend>Vergroot het comfort van uw e-bike met:</legend>
-            <label>
-                <span>airconditioning</span>
-                <input type="checkbox" name="comfort" value="air">
-            </label>
-            <label>
-                <span>cruisecontrol</span>
-                <input type="checkbox" name="comfort" value="cruisecontrol">
-            </label>
-            <label>
-                <span>zadelverwarming</span>
-                <input type="checkbox" name="comfort" value="zadelverwarming">
-            </label>
-        </fieldset>
-    </p>
-    <button type="submit">Verzend</button>
+        <label for="gezond">De gezonde keus</label>
+        <select id="gezond" name="gezond">
+            <optgroup label="Groenten">
+                <option value="wortel">Wortel</option>
+                <option value="bloemkool">Bloemkool</option>
+                <option value="sla">Sla</option>
+            </optgroup>
+            <optgroup label="Fruit">
+                <option value="appel">Appel</option>
+                <option value="banaan">Banaan</option>
+                <option value="peer">Peer</option>
+            </optgroup>
+        </select>
 </form>
