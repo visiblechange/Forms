@@ -1,16 +1,59 @@
-<form>
+<!DOCTYPE html>
+
+<html lang="nl">
+
+<head>
+
+<title>Oefenopdracht formulieren maken</title>
+
+</head>
+
+<body>
+
+<form method="POST">
     <p>
-        <label for="gezond">De gezonde keus</label>
-        <select id="gezond" name="gezond">
-            <optgroup label="Groenten">
-                <option value="wortel">Wortel</option>
-                <option value="bloemkool">Bloemkool</option>
-                <option value="sla">Sla</option>
+        <label>Voornaam:
+            <input name="voornaam" type="text" autocomplete="given-name" required>
+        </label>
+    </p>
+    <p>
+        <label>tussenvoegsels: <small>(optioneel)</small>
+            <input name="tussenvoegsels" type="text">
+        </label>
+    </p>
+    <p>
+        <label>achternaam:
+            <input name="achternaam" type="text" autocomplete="family-name" required>
+    </p>
+    <p>
+    <fieldset class="radio">
+        <legend>Bent u een man of een vrouw? </legend>
+            <span>man</span>
+                <input type="radio" name="geslacht" value="M">
+        </label>
+        <label>
+            <span>vrouw</span>
+                <input type="radio" name="geslacht" value="V">
+        </label>
+    </fieldset>
+    <p>
+        <label>E-mailadres:</label>
+        <input name="email" type="email" autocomplete="email">
+    </p>
+    <p>
+        <label for="vakgebied">Welke module wilt u volgen? <small>(kies één module)</small></label>
+        <select id="vakgebied" name="vakgebied">
+            <optgroup label="Vakgebied Hobby">
+                <option value="filosofie">Filosofie</option>
+                <option value="voetverzorging">Voetverzorging</option>
+                <option value="beleggen">Beleggen voor beginers</option>
             </optgroup>
-            <optgroup label="Fruit">
-                <option value="appel">Appel</option>
-                <option value="banaan">Banaan</option>
-                <option value="peer">Peer</option>
+            <optgroup label="Vakgebied Talen">
+                <option value="spaans">Spaans voor beginners</option>
+                <option value="engels">Engels voor gevorderden</option>
             </optgroup>
         </select>
+    </p>
+    
+    <button type="submit">Verzend</button>
 </form>
